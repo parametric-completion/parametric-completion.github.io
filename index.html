@@ -142,7 +142,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img id="teaser" style="width: 80%; height: auto; display: block; margin: 0 auto;" src="./static/images/teaser.png" alt="PaCo teaser figure"/>
-      <h2 class="subtitle has-text-centered" style="font-size: 1.0rem;">
+      <h2 class="subtitle has-text-centered" style="font-size: 0.9rem;">
         <strong>PaCo</strong> recovers parametric primitives beyond individual points for polygonal surface reconstruction.
       </h2>
     </div>
@@ -160,8 +160,7 @@
             Existing polygonal surface reconstruction methods heavily depend on input completeness and struggle with incomplete point clouds. 
             We argue that while current point cloud completion techniques may recover missing points, they are not optimized for polygonal surface reconstruction, 
             where the parametric representation of underlying surfaces remains overlooked.
-          </p>
-          <p>
+
             To address this gap, we introduce parametric completion, a novel paradigm for point cloud completion, which recovers parametric primitives instead of individual points to convey high-level geometric structures. 
             Our presented approach, PaCo, enables high-quality polygonal surface reconstruction by leveraging plane proxies that encapsulate both plane parameters and inlier points, proving particularly effective in challenging scenarios with highly incomplete data. 
             Comprehensive evaluations of our approach on the ABC dataset establish its effectiveness with superior performance and set a new standard for polygonal surface reconstruction from incomplete data.
@@ -194,7 +193,8 @@
       display: flex;
       justify-content: space-between;
       text-align: center;
-      margin-bottom: 0.5em;">
+      margin-bottom: 0.5em;
+      font-size: 0.9rem">
       <div style="flex: 1;">Input (-25%)</div>
       <div style="flex: 1;">GT</div>
       <div style="flex: 1;">PaCo</div>
@@ -208,7 +208,9 @@
       display: flex;
       justify-content: space-between;
       text-align: center;
-      margin-bottom: 0.5em; margin-top: 1.0em;">
+      margin-bottom: 0.5em; 
+      margin-top: 1.0em;
+      font-size: 0.9rem">
       <div style="flex: 1;">Input (-50%)</div>
       <div style="flex: 1;">GT</div>
       <div style="flex: 1;">PaCo</div>
@@ -222,7 +224,9 @@
       display: flex;
       justify-content: space-between;
       text-align: center;
-      margin-bottom: 0.5em; margin-top: 1.0em;">
+      margin-bottom: 0.5em; 
+      margin-top: 1.0em;
+      font-size: 0.9rem">
       <div style="flex: 1;">Input (-75%)</div>
       <div style="flex: 1;">GT</div>
       <div style="flex: 1;">PaCo</div>
@@ -239,7 +243,7 @@
     <h2 class="title is-4" style="text-align: center;">How it works</h2>
     <div class="hero-body">
       <img id="architecture" style="width: 100%; height: auto; display: block; margin: 0 auto;" src="./static/images/architecture.png" alt="PaCo architecture"/>
-      <h2 class="subtitle" style="font-size: 1.0rem;">
+      <h2 class="subtitle" style="font-size: 0.9rem;">
         <strong>Architecture of PaCo.</strong> 
         Starting from an incomplete point cloud, 
         we hierarchically encode the points into plane proxies with a lookup table from segmentation. 
