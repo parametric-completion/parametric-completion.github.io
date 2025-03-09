@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -60,7 +60,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -111,7 +111,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/"
+                <a href="https://youtu.be/-naMbdWMBNE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -141,82 +141,20 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        PaCo is a new paradigm for point cloud completion that recovers parametric primitives to convey high-level geometric structures beyond individual points.
+      <img id="teaser" style="width: 80%; height: auto; display: block; margin: 0 auto;" src="./static/images/teaser.png" alt="PaCo teaser figure"/>
+      <h2 class="subtitle has-text-centered" style="font-size: 1.0rem;">
+        <strong>PaCo</strong> recovers parametric primitives beyond individual points for polygonal surface reconstruction.
       </h2>
     </div>
   </div>
 </section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-4">Overview</h2>
         <div class="content has-text-justified">
           <p>
             Existing polygonal surface reconstruction methods heavily depend on input completeness and struggle with incomplete point clouds. 
@@ -236,9 +174,8 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/-naMbdWMBNE?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -248,13 +185,80 @@
 </section>
 
 
+<!-- video -->
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4" style="text-align: center;">Comparison with other methods</h2>
+    <div class="caption" style="
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 0.5em;">
+      <div style="flex: 1;">Input (-25%)</div>
+      <div style="flex: 1;">GT</div>
+      <div style="flex: 1;">PaCo</div>
+      <div style="flex: 1;">ODGNet</div>
+      <div style="flex: 1;">AdaPoinTr</div>
+      <div style="flex: 1;">PoinTr</div>
+    </div>
+    <video controls width="100%" height="100%" src="./static/videos/simple.mp4" type="video/mp4" autoplay muted loop playsinline></video> 
+
+    <div class="caption" style="
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 0.5em; margin-top: 1.0em;">
+      <div style="flex: 1;">Input (-50%)</div>
+      <div style="flex: 1;">GT</div>
+      <div style="flex: 1;">PaCo</div>
+      <div style="flex: 1;">ODGNet</div>
+      <div style="flex: 1;">AdaPoinTr</div>
+      <div style="flex: 1;">PoinTr</div>
+    </div>
+    <video controls width="100%" height="100%" src="./static/videos/medium.mp4" type="video/mp4" autoplay muted loop playsinline></video> 
+
+    <div class="caption" style="
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 0.5em; margin-top: 1.0em;">
+      <div style="flex: 1;">Input (-75%)</div>
+      <div style="flex: 1;">GT</div>
+      <div style="flex: 1;">PaCo</div>
+      <div style="flex: 1;">ODGNet</div>
+      <div style="flex: 1;">AdaPoinTr</div>
+      <div style="flex: 1;">PoinTr</div>
+    </div>
+    <video controls width="100%" height="100%" src="./static/videos/hard.mp4" type="video/mp4" autoplay muted loop playsinline></video> 
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4" style="text-align: center;">How it works</h2>
+    <div class="hero-body">
+      <img id="architecture" style="width: 100%; height: auto; display: block; margin: 0 auto;" src="./static/images/architecture.png" alt="PaCo architecture"/>
+      <h2 class="subtitle" style="font-size: 1.0rem;">
+        <strong>Architecture of PaCo.</strong> 
+        Starting from an incomplete point cloud, 
+        we hierarchically encode the points into plane proxies with a lookup table from segmentation. 
+        These proxies inform the proxy generator in producing a set of proxy proposals. 
+        The generated proxies are then passed to the parameter estimator and the point distributor for primitive estimation. 
+        Finally, the primitive selector identifies a subset of primitives to form the parametric completion, 
+        with selection optimized via bipartite matching. The resulting primitives enable direct assembly for polygonal surface reconstruction.
+      </h2>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{chen2025paco,
-  author    = {Chen, Zhaiyu and Wang, Yuqing and Nan, Liangliang and Zhu, Xiao Xiang},
+    <pre><code>@inproceedings{chen2025paco,
+  author    = {Zhaiyu Chen and Yuqing Wang and Liangliang Nan and Xiao Xiang Zhu},
   title     = {Parametric Point Cloud Completion for Polygonal Surface Reconstruction},
-  journal   = {CVPR},
+  booktitle = {CVPR},
   year      = {2025},
 }</code></pre>
   </div>
