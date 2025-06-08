@@ -25,12 +25,6 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/simple-icons@v10/style.min.css"
-  />
-  
 </head>
 <body>
 
@@ -132,8 +126,14 @@
                 <a href="https://colab.research.google.com/github/parametric-completion/paco/blob/main/demo/demo.ipynb"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <!-- `si si-googlecolab` will inherit `color: white` -->
-                    <i class="si si-googlecolab"></i>
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecolab.svg"
+                      alt="Colab"
+                      style="
+                        /* turn the black SVG into white */
+                        filter: brightness(0) invert(1);
+                      "
+                    />
                   </span>
                   <span>Demo</span>
                   </a>
